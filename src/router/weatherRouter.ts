@@ -1,4 +1,5 @@
 import { Router } from "express";
+
 import { weatherControllers } from "../controlers/weatherControlers";
 
 const router = Router();
@@ -56,6 +57,6 @@ router.get("/", weatherControllers.getByCity);
  *       '500':
  *         description: Failed to fetch weather data
  */
-router.get('/cord', weatherControllers.getByCord);
+router.get("/cord", weatherControllers.getByCord);
 
 export const weatherRouter = router;
